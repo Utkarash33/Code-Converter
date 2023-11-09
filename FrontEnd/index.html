@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Editor and Converter</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="editor"></div>
+
+    <nav>
+        <button id="convert-button">Convert</button>
+        <button id="check-button">Check Quality</button>
+        <button id="debug-button">Debug</button>
+        <select id="language-select">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+           <option value="javaScript">javaScript</option>
+        </select>
+    </nav>
+    <div class="container">    
+        <div  class="input-section" id="source-code"></div>
+        <div class="output-section">
+            <h2>Output</h2>
+            <div id="output"></div>
+            <div id="loader" class="loader"></div>
+        </div>
+    </div>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.27.0/min/vs/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-languageclient/0.16.2/main.js"></script>
+    <script src="./scripts.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
+
